@@ -1,0 +1,6 @@
+﻿experiment_id,experiment_name,model,pipeline,accuracy,macro_f1,precision,recall,train_time_min,epochs,notes,timestamp
+EXP-01,Custom CNN - Pipeline A (Raw baseline),Custom CNN,A - Raw,0.8285,0.7641,0.7781,0.7772,27.17,20,"Baseline - no preprocessing beyond resize and [0,1] normalization",2026-06-17 22:07
+EXP-02,Custom CNN - Pipeline B (Normalization + Denoising),Custom CNN,B - Norm + Denoise,0.9038,0.8603,0.8741,0.8588,28.06,20,ImageNet Z-score normalization + Gaussian blur + Median filter,2026-06-17 22:35
+EXP-03,Custom CNN - Pipeline C (LAB color space),Custom CNN,C - LAB,0.857,0.8075,0.8304,0.7987,32.49,20,Denoising + LAB conversion + CLAHE on L channel,2026-06-17 23:08
+EXP-04,Custom CNN - Pipeline D (Background removal),Custom CNN,D - Segmented,0.8528,0.807,0.8332,0.8005,26.42,20,Pre-segmented images from segmented/ folder - background removed,2026-06-17 23:35
+EXP-05,Custom CNN - Pipeline E (Full augmentation),Custom CNN,E - Full Aug,0.8214,0.752,0.8052,0.7419,33.89,20,Segmented + geometric + photometric augmentation + CutMix,2026-06-18 00:09
