@@ -18,7 +18,7 @@ Sprovedeno je ukupno **5 eksperimenata** sa razlicitim tokovima predobrade:
 - segmentacija pozadine
 - kompletna augmentacija (geometrijska + fotometrijska + CutMix)
 
-## ⚙️ Instalacija biblioteka
+## ⚙️ Podesavanje okruzenja i instalacija biblioteka
 
 - Kreiranje virtuelnog okruzenja: `python -m venv .venv`
 - Aktivacija (Windows PowerShell): `.\.venv\Scripts\Activate.ps1`
